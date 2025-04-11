@@ -1,0 +1,666 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-contact{
+    position: absolute;
+    flex-direction: row;
+    margin-top: -4.5%;
+    margin-left: 60%;
+    width: 100%;
+    padding: 10.5px;
+    background-color: rgb(218, 218, 218);
+    text-align: center;
+    border-radius: 0 300px;
+}
+.nav-contact a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    margin: 30px;
+}
+nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    top: 0;
+}
+
+.heading {
+    margin-left: 200px;
+    font-size: 20px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.heading a {
+    text-decoration: none;
+    color: rgb(177, 117, 117);
+
+}
+
+nav ul{
+    position: relative;
+    list-style: none;
+    display: flex;
+    margin-left: 00px;
+}
+nav li{
+    margin-top: 60px;
+}
+
+nav li a {
+    color: rgba(47, 24, 177);
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+nav li a:hover{
+    border-bottom: 2px solid black;
+}
+button{
+    padding: 10px 10px;
+    margin: 15px;
+    margin-top: 65px;
+    border-radius: 10px;
+}
+button a{
+    text-decoration: none;
+    font-size: 18px;
+    color: whitesmoke;
+}
+.nav-contact{
+    display: flex;
+}
+
+
+@media screen and (max-width: 1000px) {
+    nav{
+        flex-direction: column;
+    }
+    nav ul{
+        display: none;
+    }
+    nav li{
+        text-align: center;
+        margin-top: 0;
+    }
+    nav .heading{
+        margin: 10px;
+        margin-right: 60%;
+    }
+    
+    .menu-line{
+        height: 4px;
+        width: 30px;
+        background-color: black;
+        margin-bottom: 6px;
+    }
+    .menu{
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        margin-top: 48px;
+        margin-left: 400px;
+    }
+    .qty-img{
+        display: none;
+    }
+    .fo-option{
+        flex-direction: column;
+    }
+
+    .fo-op-list{
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .home-2 {
+        flex-direction: column;
+        margin: 100px;
+        text-align: center;
+    }
+    .fo-op-list-1{
+        margin-left: -60px;
+    }
+    .facility{
+        flex-direction: column;
+    }
+    .cht-box-all{
+        display: none;
+    }
+  
+    
+    
+}
+@media screen and (max-width: 1200px){
+    .home-img{
+        display: none;
+    }
+    .home-2 {
+        flex-direction: column;
+        margin: 100px;
+        text-align: center;
+    }
+    .home-2-none{
+        display: none;
+    }
+}
+@media screen and (max-width: 1300px){
+    .nav-contact{
+        display: none;
+    }
+}
+
+
+.home-img img{
+    width: 100%;
+    height: 60vh;
+}
+.home-text{
+    margin-top: -18%;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.home-text .one{
+    font-size: 50px;
+}
+
+.home-2{
+    margin-top: 8.4%;
+    display: flex;
+    background-color: rgb(48, 61, 85);
+    padding: 35px;
+    text-align: start;
+    height: auto;
+}
+.home-2 div{
+    width: 80%;
+}
+.home-2 p{
+    margin-left: 10%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.home-2 .one{
+    color: whitesmoke;
+    font-size: 1.5rem;
+}
+.home-2 .three{
+    color: orange;
+    font-size: 2rem;
+    font-family: cursive;
+}
+.home-2 .two{
+    color: rgb(175, 175, 175);
+}
+
+.home-2 button a:hover{
+    color: rgb(0, 0, 0);
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    font-weight: 500;
+}
+.home-2 button a{
+    color: black;
+}
+
+
+
+
+.c-w-us {
+    position: fixed;
+    right: 10%;
+    bottom: 5%;
+    padding: 15px 20px;
+    background-color: rgb(65, 65, 209);
+    border-radius: 50px;
+    font-size: 1.1rem;
+    color: whitesmoke;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 0 10px black;
+}
+
+
+.c-w-us i {
+    padding: 5px;
+}
+
+.chat-box {
+    display: none;
+    position: fixed;
+    bottom: 1px;
+    left: 980px;
+    background-color: rgb(105, 105, 240);
+    padding: 20px;
+    margin: 150px;
+    width: 25%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.cancel {
+    cursor: pointer;
+    background-color: red;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    border: none;
+    color: white;
+    margin-left: 90%;
+}
+
+.head h3 {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    margin-top: -105px;
+}
+
+.head p {
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}
+
+.body {
+    margin: 20px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+.last input {
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 94%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.last button {
+    padding: 10px;
+    background-color: rgb(83, 83, 99);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.last button:hover {
+    background-color: rgb(12, 148, 80);
+    font-weight: bolder;
+}
+
+
+
+
+
+#service{
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+    margin: 100px;
+}
+#service .text{
+    color: rgb(25, 25, 75);
+    font-size: 35px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#service .one{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+#service .main{
+    font-size: 1.2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#service .row div:hover{
+    cursor: pointer;
+    border: 0.1px solid rgb(255, 255, 255);
+    border-radius: 3px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 5px;
+}
+#service i{
+    padding: 10px;
+    font-size: 2rem;
+    color: brown;
+}
+#service a{
+    color: rgb(53, 29, 94);
+    text-decoration: none;
+}
+#service p{
+    padding: 10px;
+    margin-top: -15px;
+    color: rgb(104, 104, 104);
+}
+
+
+.service-2{
+    display: flex;
+}
+.service-2 img{
+    width: 100%;
+}
+.service-2-heading{
+    align-items: center;
+    justify-content: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 10%;
+    font-size: 1.2rem;
+    width: 50%;
+}
+.service-2-heading h1{
+    color: rgb(53, 29, 94);
+
+}
+.service-2-heading .one{
+    font-size: 3rem;
+}
+.service-2-heading p{
+    color: rgb(104, 104, 104);
+}
+
+.local-office{
+    margin-top: 40px;
+    background-color: rgb(48, 61, 85);
+    padding: 10px;
+    text-align: center;
+    color: rgb(184, 104, 104);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 10px;
+
+}
+.local-office h2{
+    margin-top: 30px;
+    font-weight: 900;
+}
+.local-office .one{
+    font-size: 2rem;
+    color: rgb(252, 252, 252);
+}
+.local-office button{
+    margin-top: -1px;
+    align-items: center;
+    padding: 10px;
+    font-weight: 900;
+    color: rgb(230, 230, 230);
+}
+.local-office button:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease;
+    font-weight: bolder;
+    background-color: rgb(245, 172, 89);
+    color: rgb(51, 50, 50);
+    cursor: pointer;
+}
+
+
+
+.plan-head{
+    color: rgb(53, 29, 94);
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.plan-head h1{
+    margin-top: 3%;
+}
+.plan{
+    border-radius: 0 0 200px 200px;
+    background-color: rgb(238, 238, 250);
+    display: flex;
+    padding: 2.5%;
+    gap: 3%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.plan i{
+    font-size: 150%;
+    color: brown;
+    margin: 2%;
+}
+.plan p{
+    font-size: 1.1rem;
+    margin-left: 13%;
+    padding: 10px;
+    color: rgb(73, 73, 73);
+}
+.plan a{
+    text-decoration: none;
+    text-align: center;
+    color: rgb(53, 29, 94);
+}
+.plan a h2{
+    font-size: 28px;
+}
+
+
+.count{
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(224, 183, 107);
+    padding: 20px;
+    text-align: center;
+}
+.count h1{
+    color: #fff;
+}
+.count .two{
+    font-size: 3rem;
+    font-weight: 800;
+}
+.count .one{
+    font-size: 25px;
+    color: rgb(36, 35, 35);
+    font-weight: 900;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+
+.cont-frm{
+    align-items: center;
+    justify-items: center;
+    background-color: rgb(253, 245, 245);
+}
+.cont-frm h3{
+    margin-top: 30px;
+}
+
+
+
+
+.quality{
+    display: flex;
+}
+.quality .qty-img{
+    width: fit-content;
+    margin: 5%;
+    border-radius: 3px;
+}
+
+.quality .text{
+    margin-top: 4%;
+    padding: 2px;
+    margin: 3px;
+    margin-top: 3%;
+    font-size: 1.1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.quality .text p, li{
+    padding: 10px;
+    color: rgb(104, 104, 104);
+}
+.quality .text h1{
+    font-size: 2rem;
+    font-family: cursive;
+    color: rgb(53, 29, 94);
+}
+.quality .text i{
+    color: red;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.facility{
+    display: flex;
+    padding: 3%;
+    text-align: center;
+}
+.facility .main{
+    margin: 10px;
+    color: rgb(117, 117, 117);
+    font-size: 1.3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-shadow: 0 0 10px black;
+}
+.facility .main:hover{
+    transform: scale(1.1);
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
+.facility .main i{
+    font-size: 3rem;
+    color: orange;
+    margin: 10px;
+}
+.facility .main h3{
+    color: rgb(53, 29, 94);
+    font-weight: 500;
+}
+
+
+
+
+.call{
+    text-align: center;
+}
+.call-now{
+    margin-top: 50px;
+    padding: 3%;
+    font-size: 1.3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.call-now .two{
+    font-size: 1.5rem;
+    font-family: fantasy;
+    color: rgb(59, 87, 139);
+}
+.call-now .one{
+    color: brown;
+    font-size: 1.6rem;
+}
+.call button{
+    margin-top: -1px;
+    background-color: rgb(177, 41, 41);    
+    font-size: 1.2rem;
+    color: whitesmoke;
+    border-radius: 5px;
+}
+.call button:hover{
+    transform: scale(1.1);
+    transition: 0.5s ease;
+    background-color: whitesmoke;
+    color: black;
+    font-weight: bolder;
+    border: 2px solid whitesmoke;
+    cursor: pointer;
+}
+
+
+
+
+
+footer{
+    background-color: #28485c;
+    color: rgb(230, 230, 230);
+    padding: 3%;
+}
+.fo-head{
+    width: 70%;
+    font-size: 1.1rem;
+    padding: 1%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.fo-head .one{
+    color: orange;
+    font-size: 2.5rem;
+    font-family: cursive;
+}
+.fo-head h3{
+    color: rgb(201, 200, 198);
+    font-family: cursive;
+}
+.fo-option{
+    display: flex;
+}
+.fo-head, .fo-option{
+    margin-left: 7%;
+}
+.fo-op-list-1{
+    font-size: 23px;
+    color: #fff;
+}
+.fo-op-list-1 li{
+    color: orange;
+    list-style: none;
+    font-weight: 600;
+}
+.fo-op-list-1 a{
+    font-size: 30px;
+    color: #fff;
+}
+.fo-op-list-1 li i{
+    color: rgb(0, 255, 76);
+    font-size: 30px;
+    margin: 10px;
+}
+.fo-op-list{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.fo-op-list a{
+    font-size: 1rem;
+    color: whitesmoke;
+    text-decoration: none;
+}
+.fo-op-list a:hover{
+    border-bottom: 1px solid whitesmoke;
+}
+.maran{
+    text-align: center;
+    font-family: cursive;
+    color: orange;
+    box-shadow: 0 0 10px;
+}
+
+
+
+
+
+    

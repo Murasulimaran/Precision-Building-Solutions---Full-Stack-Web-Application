@@ -1,0 +1,175 @@
+{% load static %}
+{% include 'header.html' %}
+
+ <style>
+
+    .img{
+        position: absolute;
+        margin-top: -33%;
+        margin-left: 50%;
+    }
+    img{
+        border-radius: 100%;
+        border-bottom: 20px solid rgb(233, 41, 41);
+        border-top: 20px solid black;
+    }
+    #contact1{
+       background-color: rgb(211, 211, 211);
+    }
+    #contact1 div,h3,button{
+        margin-left: 5%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .qt-head{
+        background-color: rgb(48, 61, 85);
+        padding: 30px;
+        color: whitesmoke;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    @media screen and (max-width: 1000px) {
+        .img{
+            display: none;
+        }
+        #contact1{
+            width: 200%;
+        }
+    }
+    #service1{
+    max-width: 100%;
+    text-align: center;
+    align-items: center;
+    margin: 100px;
+}
+#service1 .text{
+    color: rgb(25, 25, 75);
+    font-size: 35px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#service1 .one{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+#service1 .main{
+    font-size: 1.2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#service1 .row div:hover{
+    cursor: pointer;
+    border: 0.1px solid rgb(255, 255, 255);
+    border-radius: 3px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 5px;
+}
+#service1 i{
+    padding: 10px;
+    font-size: 2rem;
+    color: brown;
+}
+#service1 a{
+    color: rgb(53, 29, 94);
+    text-decoration: none;
+}
+#service1 p{
+    padding: 10px;
+    margin-top: -15px;
+    color: rgb(104, 104, 104);
+}
+ </style>
+
+<body>
+
+    <section class="qt-head">
+        <h3>Get a Free Quote for Professional <span style="color: orange;font-family: Georgia, 'Times New Roman', Times, serif;font-weight: 700;">Cleaning</span> Services</h3>
+    </section>
+
+
+    <section class="row" id="contact1">
+        <div class="cont-frm1">
+            <h3>Get Free Quote us!</h3>
+        <div class="mb-3 col-4">
+            <label for="f_name" class="form-label">First Name</label>
+            <input type="email" class="form-control" id="f_name" placeholder="Enter your first name">
+          </div>
+          <div class="mb-3 col-4">
+            <label for="l_name" class="form-label">Last Name</label>
+            <input type="email" class="form-control" id="l_name" placeholder="Enter your last name">
+          </div>
+          <div class="mb-3 col-4">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+          </div>
+          <div class="mb-3 col-4">
+            <label for="phone" class="form-label">Phone Number</label>
+            <input type="email" class="form-control" id="phone" placeholder="Enter your phone number">
+          </div>
+          <div class="mb-3 col-4">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="tex_area" rows="3" placeholder="Enter your message!"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary col">Submit</button>
+        </div>
+      </section>
+
+
+      <section>
+        <div class="img">
+            <img src="{% static 'assert/img/quality-4.webp' %}"  alt="">
+        </div>
+      </section>
+
+
+      <section class="service1" id="service1">
+        <div class="text">
+            <p class="text">Our <span class="one">Services:</span></p>
+        </div>
+        <div class="row ">
+            <div class="col-6">
+                <h3><i class="fa-solid fa-snowflake"></i></i><a href="">Commercial Cleaning</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat animi ut obcaecati explicabo beatae nobis, culpa provident? Ipsa, suscipit perferendis!</p>
+            </div>
+            <div class="col-6">
+                <h3><i class="fa-solid fa-earth-americas"></i><a href="">Janitorial Services</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat animi ut obcaecati explicabo beatae nobis, culpa provident? Ipsa, suscipit perferendis!</p>
+            </div>
+            <div class="col-6">
+                <h3><i class="fa-brands fa-pagelines"></i><a href="">Green Cleaning</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat animi ut obcaecati explicabo beatae nobis, culpa provident? Ipsa, suscipit perferendis!</p>
+            </div>
+            <div class="col-6">
+                <h3><i class="fa-solid fa-unlock-keyhole"></i><a href="">Office Cleaning</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat animi ut obcaecati explicabo beatae nobis, culpa provident? Ipsa, suscipit perferendis!</p>
+            </div>
+            <div class="col-6">
+                <h3><i class="fa-solid fa-dumbbell"></i><a href="">Carpet Clening </a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat animi ut obcaecati explicabo beatae nobis, culpa provident? Ipsa, suscipit perferendis!</p>
+            </div>
+            <div class="col-6">
+                <h3><i class="fa-solid fa-cart-plus"></i><a href="">Medical Grade </a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat animi ut obcaecati explicabo beatae nobis, culpa provident? Ipsa, suscipit perferendis!</p>
+            </div>
+
+            <div class="col-6">
+                <h3><i class="fa-solid fa-truck"></i></i><a href="">Hard Floor</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat animi ut obcaecati explicabo beatae nobis, culpa provident? Ipsa, suscipit perferendis!</p>
+            </div>
+            <div class="col-6">
+                <h3><i class="fa-solid fa-hands"></i><a href="">Post-Construction</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat animi ut obcaecati explicabo beatae nobis, culpa provident? Ipsa, suscipit perferendis!</p>
+            </div>
+            <div class="col-6">
+                <h3><i class="fa-solid fa-award"></i><a href="">Franchising</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat animi ut obcaecati explicabo beatae nobis, culpa provident? Ipsa, suscipit perferendis!</p>
+            </div>
+            <div class="col-6">
+                <h3><i class="fa-solid fa-award"></i><a href="">Franchising</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat animi ut obcaecati explicabo beatae nobis, culpa provident? Ipsa, suscipit perferendis!</p>
+            </div>
+        </div>
+
+     </section>
+
+</body>
+
+{% include 'footer.html' %}

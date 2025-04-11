@@ -1,0 +1,92 @@
+    <style>
+        .login{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-size: 1.1rem;
+            background-color: rgb(246, 246, 248);
+        }
+        .login .container{
+            background-color: #fff;
+            border: 1px solid rgb(253, 253, 253);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+        .container .logo,p,h5{
+            text-align: center;
+            color: rgb(82, 80, 80);
+        }
+        .login .logo,a{
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: #007bff;
+        }
+        .login .container h5,p{
+            font-size: 20px;
+        }
+        .login form input,label{
+            padding: 8px;
+            align-items: center;
+            margin: 8px;
+            width: 95%;
+            color: rgb(82, 80, 80);
+        }
+        .login .btn{
+            padding: 10px;
+            width: 100%;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            color: whitesmoke;
+            font-weight: bolder;
+            font-size: 1pc;
+        }
+        .login .btn:hover{
+            background-color: rgb(70, 184, 85);
+            color: black;
+            font-weight: bolder;
+            transition: 0.3s ease;
+            cursor: pointer;
+        }
+
+    </style>
+
+<body>
+    <div class="login">
+        <div class="container">
+            <div class="logo">
+                <span><a href="/">Precision Building Solutions</a></span>
+            </div>
+
+            <h5>Login to Your Account</h5>
+            <p>Enter your username & password to login</p>
+
+            {% for message in messages %}
+                 <span style="color:red;" class="alert alert-{{ message.tags }}">{{ message }}</span>
+            {% endfor %}
+
+                <form method="POST" action="">
+                    {% csrf_token %}
+
+                <label for="username" class="form-label">Username</label>
+                <input type="text" id="username" name="username" class="form-control" required>
+
+                <label for="password" class="form-label">Password</label>
+                <input type="password" id="password" name="password" class="form-control" required>
+
+                <button type="submit" class="btn" name="submit">Login</button>
+
+                <p>Don't have an account? <a href="/register/">Create an account</a></p>
+            </form>
+
+
+            </div>
+    </div>
+</body>
